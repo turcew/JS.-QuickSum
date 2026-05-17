@@ -1,5 +1,4 @@
 const symbols = " ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
-console.log(symbols);
 
 const myString = "abcd";
 
