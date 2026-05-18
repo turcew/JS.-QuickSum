@@ -11,23 +11,13 @@ function quickSum(str) {
   }
 
   if (string.length === 1) {
-    return symbols.findIndex((el, index) => {
-      if (el === string[0]) {
-        return index;
-      }
-    });
+    return symbols.indexOf(string[0]);
   }
 
   let res = 0;
 
-  for (index in string) {
-    res +=
-      index *
-      symbols.findIndex((el, i) => {
-        if (el === string[index]) {
-          return i;
-        }
-      });
+  for (let index = 0; index < string.length; index++) {
+    res += index * symbols.indexOf(string[index]);
   }
   return res;
 }
