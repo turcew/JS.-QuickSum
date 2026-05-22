@@ -3,7 +3,6 @@ const symbols = " ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
 const myString = "abcd";
 
 function quickSum(str) {
-  let string = str.toUpperCase();
   string = string.split("");
 
   if (/\W/.test(string[0]) || /\W/.test(string[string.length - 1])) {
